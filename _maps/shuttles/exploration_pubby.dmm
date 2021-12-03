@@ -28,10 +28,6 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/obj/machinery/power/apc/highcap/five_k{
-	name = "exploration shuttle APC";
-	pixel_y = 25
-	},
 /turf/open/floor/plasteel/techmaint,
 /area/shuttle/exploration)
 "ct" = (
@@ -60,6 +56,9 @@
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
+	},
+/obj/machinery/power/apc/highcap/fifteen_k{
+	pixel_y = 24
 	},
 /turf/open/floor/plasteel/techmaint,
 /area/shuttle/exploration)
@@ -161,18 +160,9 @@
 /turf/open/floor/plasteel/techmaint,
 /area/shuttle/exploration)
 "in" = (
-/obj/docking_port/mobile{
-	dheight = -1;
-	dir = 4;
-	dwidth = 9;
-	height = 34;
-	id = "exploration";
-	name = "exploration shuttle";
-	shuttle_object_type = /datum/orbital_object/shuttle/custom_shuttle;
-	width = 9
-	},
-/turf/template_noop,
-/area/template_noop)
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/exploration)
 "ip" = (
 /obj/machinery/door/window/westleft{
 	dir = 1;
@@ -472,6 +462,9 @@
 	},
 /obj/machinery/light/small{
 	dir = 1
+	},
+/obj/structure/sign/warning/fire{
+	pixel_y = 32
 	},
 /turf/open/floor/plasteel/techmaint,
 /area/shuttle/exploration)
@@ -851,6 +844,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/exploration)
+"PH" = (
+/obj/docking_port/mobile{
+	dir = 4;
+	dwidth = 2;
+	height = 9;
+	id = "exploration";
+	name = "exploration shuttle";
+	shuttle_object_type = /datum/orbital_object/shuttle/custom_shuttle;
+	width = 34
+	},
+/turf/template_noop,
+/area/template_noop)
 "PK" = (
 /obj/machinery/atmospherics/pipe/manifold/purple/visible,
 /obj/effect/turf_decal/stripes/line{
@@ -930,14 +935,12 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/monotile/dark,
 /area/shuttle/exploration)
-"US" = (
-/obj/structure/sign/nanotrasen,
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/exploration)
 "UY" = (
-/obj/structure/fans/tiny,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
 /obj/machinery/door/airlock/external/glass,
-/turf/open/floor/plating,
+/turf/open/floor/mineral/plastitanium,
 /area/shuttle/exploration)
 "VC" = (
 /obj/effect/turf_decal/tile/red{
@@ -1080,7 +1083,7 @@
 (1,1,1) = {"
 SB
 SB
-in
+PH
 SB
 SB
 SB
@@ -1139,8 +1142,8 @@ jx
 jx
 NZ
 jx
-jx
-US
+in
+Zo
 SB
 SB
 LX
@@ -1355,8 +1358,8 @@ qm
 jx
 jx
 jx
-jx
-US
+in
+Zo
 SB
 SB
 CS
