@@ -566,6 +566,10 @@
 	suffix = "corg"
 	name = "corg exploration shuttle"
 
+/datum/map_template/shuttle/exploration/pubby
+	suffix = "pubby"
+	name = "pubby exploration shuttle"
+
 /datum/map_template/shuttle/exploration/delta
 	suffix = "delta"
 	name = "delta exploration shuttle"
