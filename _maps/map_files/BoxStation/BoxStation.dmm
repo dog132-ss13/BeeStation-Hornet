@@ -51724,6 +51724,18 @@
 	},
 /turf/open/floor/wood,
 /area/vacant_room/office)
+"lvL" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 10;
+	height = 9;
+	id = "exploration_home";
+	name = "Exploration Dock";
+	roundstart_template = /datum/map_template/shuttle/exploration/box;
+	width = 19
+	},
+/turf/open/space/basic,
+/area/space)
 "lxd" = (
 /obj/machinery/light_switch{
 	pixel_x = -20
@@ -114796,7 +114808,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+lvL
 aaa
 aaa
 aaa

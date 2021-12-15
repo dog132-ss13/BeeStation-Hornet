@@ -14,8 +14,7 @@
 /turf/open/floor/plating,
 /area/shuttle/exploration)
 "ca" = (
-/obj/machinery/light/small,
-/obj/effect/turf_decal/stripes/line{
+/obj/effect/turf_decal/loading_area{
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -27,9 +26,6 @@
 /turf/open/floor/plating,
 /area/shuttle/exploration)
 "dp" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/machinery/computer/shuttle_flight/custom_shuttle/exploration,
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/mineral/plastitanium,
@@ -45,6 +41,16 @@
 "dC" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/structure/fans/tiny,
+/obj/docking_port/mobile{
+	dir = 4;
+	dwidth = 10;
+	height = 7;
+	id = "exploration";
+	name = "Exploration Shuttle";
+	port_direction = 8;
+	shuttle_object_type = /datum/orbital_object/shuttle/custom_shuttle;
+	width = 19
+	},
 /turf/open/floor/monotile/dark,
 /area/shuttle/exploration)
 "es" = (
@@ -180,10 +186,8 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/exploration)
 "lA" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
+	dir = 4
 	},
 /turf/open/floor/monotile/dark,
 /area/shuttle/exploration)
@@ -244,10 +248,6 @@
 	dir = 1;
 	pixel_y = 2
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 6;
-	pixel_y = -30
-	},
 /turf/open/floor/monotile/dark,
 /area/shuttle/exploration)
 "qY" = (
@@ -262,15 +262,12 @@
 	layer = 2.9;
 	pixel_y = 6
 	},
-/obj/structure/table/reinforced,
-/obj/machinery/microwave{
-	pixel_y = 5
-	},
+/obj/machinery/computer/arcade/orion_trail,
 /turf/open/floor/monotile/dark,
 /area/shuttle/exploration)
 "uu" = (
-/obj/machinery/light/small{
-	dir = 1
+/obj/effect/turf_decal/loading_area{
+	dir = 4
 	},
 /obj/machinery/button/door{
 	desc = "A remote control switch.";
@@ -278,10 +275,6 @@
 	name = "Exploration Shuttle Shutters";
 	pixel_y = 23
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/exploration)
 "uz" = (
@@ -294,12 +287,6 @@
 	pixel_x = -4
 	},
 /turf/open/floor/plasteel/white,
-/area/shuttle/exploration)
-"uL" = (
-/obj/effect/turf_decal/loading_area{
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
 /area/shuttle/exploration)
 "uU" = (
 /obj/effect/turf_decal/stripes/line{
@@ -353,11 +340,8 @@
 /turf/open/floor/plasteel/dark,
 /area/shuttle/exploration)
 "xe" = (
-/obj/effect/turf_decal/box,
-/obj/structure/sign/poster/official/random{
-	pixel_x = -32
-	},
-/turf/open/floor/mineral/plastitanium,
+/obj/machinery/door/airlock/shuttle,
+/turf/open/floor/monotile/dark,
 /area/shuttle/exploration)
 "xm" = (
 /obj/effect/turf_decal/stripes/line,
@@ -367,8 +351,12 @@
 /turf/open/floor/plasteel/techmaint,
 /area/shuttle/exploration)
 "xB" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/table/reinforced,
+/obj/item/storage/box/donkpockets/donkpocketberry{
+	pixel_x = -2;
+	pixel_y = 1
+	},
+/obj/item/storage/box/donkpockets/donkpocketberry,
 /turf/open/floor/monotile/dark,
 /area/shuttle/exploration)
 "xC" = (
@@ -513,10 +501,7 @@
 /turf/open/floor/plasteel/white,
 /area/shuttle/exploration)
 "Gu" = (
-/obj/effect/turf_decal/loading_area{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/box,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/exploration)
 "Ij" = (
@@ -569,10 +554,6 @@
 /turf/open/floor/monotile/dark,
 /area/shuttle/exploration)
 "Mi" = (
-/obj/effect/turf_decal/stripes/white/line{
-	dir = 1;
-	pixel_y = 1
-	},
 /obj/structure/window{
 	dir = 1;
 	pixel_y = 2
@@ -632,8 +613,10 @@
 /turf/open/floor/plasteel/techmaint,
 /area/shuttle/exploration)
 "PP" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/machinery/light,
+/obj/structure/table/reinforced,
+/obj/machinery/microwave{
+	pixel_y = 5
 	},
 /turf/open/floor/monotile/dark,
 /area/shuttle/exploration)
@@ -642,12 +625,9 @@
 	dir = 1;
 	pixel_y = 1
 	},
-/obj/structure/table/reinforced,
-/obj/item/storage/box/donkpockets/donkpocketberry{
-	pixel_x = -2;
-	pixel_y = 1
+/obj/structure/chair/stool/bar{
+	pixel_y = 13
 	},
-/obj/item/storage/box/donkpockets/donkpocketberry,
 /turf/open/floor/plasteel/dark,
 /area/shuttle/exploration)
 "SL" = (
@@ -660,6 +640,7 @@
 "TF" = (
 /obj/effect/turf_decal/box,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/small,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/exploration)
 "VF" = (
@@ -736,10 +717,6 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel/techmaint,
 /area/shuttle/exploration)
-"Yu" = (
-/obj/effect/turf_decal/box,
-/turf/open/floor/mineral/plastitanium,
-/area/shuttle/exploration)
 "YD" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -748,9 +725,10 @@
 /turf/open/floor/plasteel/dark,
 /area/shuttle/exploration)
 "ZX" = (
-/obj/effect/turf_decal/stripes/line{
+/obj/effect/turf_decal/loading_area{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/exploration)
 
@@ -824,11 +802,11 @@ kE
 Ld
 We
 jl
-lA
-xB
+CG
+CG
 jl
 CG
-PP
+jl
 EB
 PC
 BY
@@ -845,11 +823,11 @@ Oc
 Oc
 eL
 qr
-Oc
-WV
-WV
-Oc
-Oc
+lA
+jl
+CG
+xB
+PP
 Oc
 Xs
 et
@@ -867,10 +845,10 @@ Xh
 uz
 Ly
 Oc
-Yu
-Yu
-xe
-TF
+WV
+WV
+WV
+Oc
 Oc
 mQ
 BY
@@ -887,11 +865,11 @@ Oc
 SL
 dB
 pF
-EB
-uL
+xe
 Gu
 Gu
-uL
+Gu
+TF
 Oc
 Wd
 ht
